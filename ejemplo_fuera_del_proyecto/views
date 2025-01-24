@@ -1,0 +1,24 @@
+def about(request):
+    return HttpResponse("""
+                        <h1>About -- Hola, Mundo!</h1>
+                        <button onclick="saludame(this)">Saludame</button>
+                        <div id="texto"></div>
+                        <a href="/">Home ...</a>
+                        <script>
+                            function saludame() {
+                                division=document.getElementById("texto");
+                                division.innerHTML="Hola Javier"
+                            }
+                        </script>
+                        """)
+
+def about_button(request):
+    return HttpResponse("""
+                        <h1>About button -- Hola, Mundo!</h1>
+                        <button onclick="home(this)">Home</button>
+                        <script>
+                            function home() {
+                                window.location.href = "/";
+                            }
+                        </script>
+                        """)
