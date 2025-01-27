@@ -1,0 +1,11 @@
+venv\
+bin
+*.pyc
+__pycache__
+
+# SQlite database files
+
+*.sqlite3
+*.rar
+*.7z
+*.zip
